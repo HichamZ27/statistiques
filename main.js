@@ -38,3 +38,8 @@ stats = prompt(
     " et " +
     max
 );
+
+// Récupérer l'élément avec l'id 'year' et y insérer l'année actuelle
+const yearSpan = document.getElementById("year");
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;

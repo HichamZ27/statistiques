@@ -1,0 +1,56 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  flex-direction: column; /* Aligne le contenu verticalement */
+  min-height: 100vh; /* Permet au body d'occuper toute la hauteur de la fenêtre */
+  background-color: #f4f4f4; /* Fond pour mieux voir le footer */
+  font-family: Arial, sans-serif; /* Police pour tout le texte */
+  padding: 20px; /* Ajoute un peu d'espace intérieur */
+}
+
+/* Header styles */
+h1 {
+  font-size: 2.5rem; /* Taille du texte pour les écrans plus grands */
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+img {
+  max-width: 100%; /* Rend l'image responsive */
+  height: auto; /* Maintient l'aspect ratio de l'image */
+  display: block; /* Enlève l'espace en bas */
+  margin: 0 auto; /* Centre l'image */
+}
+
+/* Footer styles */
+footer {
+  margin-top: auto; /* Pousse le footer vers le bas */
+  text-align: center;
+  padding: 10px 0;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8); /* Fond léger pour le footer */
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Ajuste la taille du texte pour les écrans plus petits */
+  }
+
+  footer {
+    padding: 15px; /* Un peu plus de padding sur les petits écrans */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Réduit la taille du texte pour les petits mobiles */
+  }
+}
